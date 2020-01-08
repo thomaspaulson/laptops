@@ -103,7 +103,6 @@ class ScreenController extends Controller
     public function update(Request $request, $id)
     {
         //
-
         $screen = Screen::find($id);
         if(!$screen){
             abort(404);
