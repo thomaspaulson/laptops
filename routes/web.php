@@ -18,8 +18,8 @@ Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/dashboard', 'Admin\DashboardController@index')->name('dashboard');
 Route::resource('/screens', 'Admin\ScreenController');
-// Route::resource('/price-ranges', 'Admin\PriceRangeController');
-// Route::resource('/brands', 'Admin\BrandController');
-// Route::resource('/processors', 'Admin\ProcessorController');
+Route::resource('/prices', 'Admin\PriceController');
+Route::resource('/brands', 'Admin\BrandController');
+Route::resource('/processors', 'Admin\ProcessorController');
 // Route::resource('/products', 'Admin\ProductController');
 // Route::resource('/users', 'Admin\UserController');
