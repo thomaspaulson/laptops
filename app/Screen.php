@@ -16,5 +16,6 @@ class Screen extends Model
     ];
 
     use SoftDeletes;
+    //
 
 }
