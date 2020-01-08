@@ -15,9 +15,6 @@ class Screen extends Model
         'max'
     ];
 
-    use SoftDeletes;
-    //
-
-    
+    use SoftDeletes;    
 
 }
