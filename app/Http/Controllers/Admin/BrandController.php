@@ -113,8 +113,7 @@ class BrandController extends Controller
 
 
         $brand->fill([
-            'min' => $request->min,
-            'max' => $request->max
+            'title' => $request->title,                        
         ]);
 
         $brand->save();

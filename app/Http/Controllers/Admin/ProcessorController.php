@@ -113,8 +113,7 @@ class ProcessorController extends Controller
 
 
         $processor->fill([
-            'min' => $request->min,
-            'max' => $request->max
+            'title' => $request->title,            
         ]);
 
         $processor->save();
