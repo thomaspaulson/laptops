@@ -14,17 +14,17 @@
                         </ul>
                     </div><br />
                     @endif
-                    <form method="post" action="{{ route('prices.update', $product->id ) }}">
+                    <form method="post" action="{{ route('prices.update', $price->id ) }}">
                         @method('PATCH') 
                         @csrf
                         <div class="form-group">    
                             <label for="first_name">Min Price:</label>
-                            <input type="text" class="form-control" name="min" value="{{ !old('min') ? $product->min : old('min') }}"/>
+                            <input type="text" class="form-control" name="min" value="{{ !old('min') ? $price->min : old('min') }}"/>
                         </div>
 
                         <div class="form-group">
                             <label for="first_name">Max Price:</label>
-                            <input type="text" class="form-control" name="max" value="{{ !old('max') ? $product->max : old('max') }}"/>
+                            <input type="text" class="form-control" name="max" value="{{ !old('max') ? $price->max : old('max') }}"/>
                         </div>
                         
                         <button type="submit" class="btn btn-primary">Update </button>

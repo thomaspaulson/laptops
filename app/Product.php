@@ -23,4 +23,12 @@ class Product extends Model
 
     use SoftDeletes;    
 
+    public function brand(){
+        return $this->belongsTo('App\Brand');
+    }
+
+    public function processor(){
+        return $this->belongsTo('App\Processor');
+    }
+
 }

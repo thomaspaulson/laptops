@@ -22,7 +22,18 @@
                     <tbody>
                         @foreach($products as $product)
                         <tr>                            
-                            <td>{{$product->title}}</td>
+                            <td>{{$product->title}}
+                                <ul>
+                                <li>Brand: {{ $product->brand->title }}</li>
+                                <li>Processor: {{ $product->processor->title }}</li>
+                                <li>Screen: {{ $product->screen }}	inch </li>
+                                <li>Touchscreen: {{ $product->touchable ? 'Yes': 'No' }}</li>
+                                <li>Availability: {{ $product->available ? 'Yes': 'No' }}</li>
+                                <li>Price: {{ $product->price }}</li>
+                                </ul>
+
+
+                            </td>
                             
                             <td>
                                 <a href="{{ route('products.edit', $product->id)}}" class="btn btn-primary">Edit</a>
