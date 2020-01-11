@@ -22,4 +22,4 @@ Route::resource('/prices', 'Admin\PriceController');
 Route::resource('/brands', 'Admin\BrandController');
 Route::resource('/processors', 'Admin\ProcessorController');
 Route::resource('/products', 'Admin\ProductController');
-// Route::resource('/users', 'Admin\UserController');
+Route::resource('/users', 'Admin\UserController');
